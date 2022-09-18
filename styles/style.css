@@ -19,8 +19,13 @@
     
 }
 
+.fi-bs-x {
+    padding-left: 40%;
+}
+
 .menu-icon {
     width: 50px;
+    text-align: center;
 }
 
 .active, .fi:hover {
@@ -30,18 +35,24 @@
 
 .right-icons {
     width: 50px;
+    text-align: center;
 }
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    height: 100px;
+}
+
+.logo {
+    font-size: 30px;
 }
 
 nav>header {
-    
-    height: 100px;
+
+    height: 110px;
     width: 100%;
     
     border-bottom: 2px black solid;
@@ -49,6 +60,7 @@ nav>header {
 
 
 nav {
+    
     display: none;
     overflow: hidden;
     width: 100%;
