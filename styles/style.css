@@ -23,9 +23,9 @@
     width: 50px;
 }
 
-.fi:hover {
+.active, .fi:hover {
     filter: drop-shadow(rgba(6, 24, 44, 0.4) 0px 0px 5px);
-    cursor: pointer;
+    
 }
 
 .right-icons {
@@ -39,12 +39,40 @@ header {
     flex-wrap: nowrap;
 }
 
-@media screen and (min-width: 500px){
+nav>header {
+    
+    height: 100px;
+    width: 100%;
+    
+    border-bottom: 2px black solid;
+}
+
+
+nav {
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+}
+
+@media screen and (min-width: 600px){
     .product-container {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         margin: 0 2rem 0 2rem;
         gap: 1rem;
     }
-
+    nav {
+        display: none;
+        overflow: hidden;
+        width: 0%;
+        background-color: black;
+        position: fixed;
+        left: 0;
+    }
     
 }
