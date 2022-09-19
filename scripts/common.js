@@ -23,7 +23,7 @@ var i = 0;
 function addProduct() {
     
     let productDetails = `<div class="product-item">
-    <img src="https://images.footway.com/02/60786-15_001.png?auto=format&fit=max&w=450" alt="">
+    <img src="https://placedog.net/450/450?random" alt="">
     </div>`;
     if (i >= 1) {
         productDiv.insertAdjacentHTML('afterend', productDetails);
