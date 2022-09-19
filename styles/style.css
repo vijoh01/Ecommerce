@@ -30,7 +30,7 @@
 
 .active, .fi:hover {
     filter: drop-shadow(rgba(6, 24, 44, 0.4) 0px 0px 5px);
-    
+    cursor: pointer;
 }
 
 .right-icons {
