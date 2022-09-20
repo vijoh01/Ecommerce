@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
     <link rel='stylesheet' href='./icons/css/uicons-bold-straight.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -14,8 +15,15 @@
     <header>
         <div class="menu-icon">
             <i class="fi fi-bs-menu-burger"></i>
-        </div>
 
+        </div>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </nav>
         <h1 class="logo">LOGO</h1>
 
         <div class="right-icons">
@@ -23,7 +31,7 @@
             <i class="fi fi-bs-shopping-cart"></i>
         </div>
     </header>
-    <nav>
+    <nav class="menu-nav">
         <header>
             <div class="menu-icon">
                 <i class="fi fi-bs-x"></i>
@@ -33,9 +41,25 @@
         </header>
     </nav>
     <button class="add-item">ADD</button>
+
+    <section class="login-background">
+        <section class="login">
+            <form class="login-form" action="something">
+
+                <label for="email">Email:
+                    <input type="email" name="email" id="email">
+                </label>
+                <label for="password">Password:
+                    <input type="password" name="password" id="password">
+                </label>
+                <button>SIGN IN</button>
+                <a href="test">Dont have an account? Register here.</a>
+            </form>
+        </section>
+    </section>
     <section class="product-container">
-        
-   
+
+
     </section>
 
     <script src="./scripts/common.js"></script>

@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+  
+}
+
+header h1, .fi {
+    color: rgb(0, 0, 0);
+}
+
 .product-container {
 
     display: grid;
@@ -13,6 +26,20 @@
     border: 1px black solid;
 }
 
+.top-nav {
+    display: none;
+    overflow: hidden;
+}
+
+.top-nav ul, .top-nav a {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+}
+
+
 .product-container img {
     padding: 20% 5% 20% 5%;
     width: 100%;
@@ -26,6 +53,7 @@
 .menu-icon {
     width: 50px;
     text-align: center;
+    margin-left: 25px;
 }
 
 .active, .fi:hover {
@@ -36,21 +64,77 @@
 .right-icons {
     width: 50px;
     text-align: center;
+    margin-right: 25px;
 }
 
 header {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
     height: 100px;
+    background-color: rgba(255, 255, 255, 0.74);
+    backdrop-filter: blur(5px);
 }
 
 .logo {
     font-size: 30px;
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
 }
 
-nav>header {
+.login {
+    position: fixed;
+    background-color: white;
+    border: 2px black solid;
+
+    max-height: 15rem;
+    max-width: 20rem;
+    width: 80%;
+    height: 20rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-background {
+    display: fixed;
+    top: 0;
+    width: 3vw;
+    height: 1vh;
+    background-color: rgb(255, 0, 0)(0, 0, 0);
+}
+
+.login-form > a {
+    font-size: 1rem;
+}
+
+
+.login-form>button {
+    height: 40px;
+}
+
+.login-form, .login-form>label {
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+.login-form {
+    gap: 1rem;
+    width: 80%;
+    font-size: 20px;
+}
+
+.login-form>a {
+    text-align: center;
+}
+
+.menu-nav>header {
 
     height: 110px;
     width: 100%;
@@ -58,8 +142,12 @@ nav>header {
     border-bottom: 2px black solid;
 }
 
+.fi-bs-user {
 
-nav {
+}
+
+
+.menu-nav {
     
     display: none;
     overflow: hidden;
@@ -73,13 +161,49 @@ nav {
 
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 700px){
     .product-container {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         margin: 0 2rem 0 2rem;
         gap: 1rem;
     }
-    nav {
+
+    
+}
+
+@media screen and (min-width: 1000px){
+    .product-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        margin: 0 2rem 0 2rem;
+        gap: 1rem;
+    }
+    .menu-icon {
+        display: none;
+        overflow: hidden;
+    }
+    .top-nav {
+        overflow: visible;
+        display: block;
+      
+        
+    }
+    .top-nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 400px;
+        
+    }
+    .right-icons {
+        margin-left: 275px;
+        width: 100px;
+
+    }
+    .right-icons .fi {
+        width: 20vw;
+        text-align: center;
+    }
+    .menu-nav {
         display: none;
         overflow: hidden;
         width: 0%;

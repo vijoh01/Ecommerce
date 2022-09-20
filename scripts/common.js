@@ -1,9 +1,10 @@
+
 var button = document.getElementsByClassName("menu-icon");
 
 for (var i = 0; i < button.length; i++) {
     button[i].addEventListener("click", function () {
         this.classList.toggle("active");
-        var menu = document.querySelector("nav");
+        var menu = document.querySelector(".menu-nav");
         if (menu.style.display === "flex") {
             menu.style.display = "none";
         } else {
@@ -14,7 +15,6 @@ for (var i = 0; i < button.length; i++) {
 
 var productDiv = document.createElement('div');
 productDiv.classList.add('product-item');
-
 
 document.querySelector('.add-item').addEventListener('click', addProduct);
 let containerDiv = document.querySelector('.product-container');
@@ -31,5 +31,15 @@ function addProduct() {
     productDiv.insertAdjacentHTML('beforeend', productDetails);
     }
     i++;
-
 }
+
+document.querySelector('.fi-bs-user').addEventListener('click', function() {
+    this.classList.toggle("active");
+    var login = document.querySelector('.login');
+
+    if (login.style.display === 'flex') {
+        login.style.display = 'none';
+    } else {
+        login.style.display = 'flex';
+    }
+});
