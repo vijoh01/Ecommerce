@@ -42,21 +42,30 @@
     </nav>
     <button class="add-item">ADD</button>
 
-    <section class="login-background">
-        <section class="login">
-            <form class="login-form" action="something">
+    <section class="login-background"></section>
+    <section class="login">
+        <form class="login-form" action="something">
+            <label class="login-title">Sign in</label>
+            <input type="email" name="email" title="email" placeholder="Email address">
+            <input type="password" name="password" id="password" placeholder="Password">
 
-                <label for="email">Email:
-                    <input type="email" name="email" id="email">
-                </label>
-                <label for="password">Password:
-                    <input type="password" name="password" id="password">
-                </label>
-                <button>SIGN IN</button>
-                <a href="test">Dont have an account? Register here.</a>
-            </form>
-        </section>
+            <button>CONTINUE</button>
+            <a class="register-btn" href="#">Dont have an account? Register here.</a>
+        </form>
     </section>
+
+    <section class="register">
+        <form class="register-form" action="something">
+            <label class="register-title">Register</label>
+            <input type="email" name="email" title="email" placeholder="Email address">
+            <input type="text" name="username" class="username" placeholder="Username">
+            <input type="password" name="password" id="password" placeholder="Password">
+
+            <button>CONTINUE</button>
+            <a class="login-btn" href="#">Back to sign in.</a>
+        </form>
+    </section>
+
     <section class="product-container">
 
 
